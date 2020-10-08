@@ -1,9 +1,10 @@
-
+musicos = []
 
 class Persona():
-    def __init__(self, nombre):
-        self.nombre = nombre
+    def __init__(self):
+        self = self
 
-    def saludar(self):
-        return "Hola mi nombre es " + musicos[nombre]
+    def saludar(self,nombre):
+        #self.nombre = nombre
+        print("Hola mi nombre es " + musicos[nombre])
 

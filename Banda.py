@@ -1,26 +1,23 @@
-from Instrumento import *
-from random import randint, uniform,random
-from Persona import *
 from Musico import *
 
 class Banda(Musico):
 
-    def agregar_musico(nombreMusico):
+    def agregarmusico(nombremusico):
 
-        musicos.append(nombreMusico)
+        musicos.append(nombremusico)
 
-        return musicos
+        return (musicos)
 
-def presentar_banda(self):
+    def presentarbanda(self):
         m = Musico
         lista = len(musicos)
         for nombre in range(0, lista):
-            m.presentar(nombre)
-            m.tocar()
-    
-
+            m.saludar("",nombre)
+            m.tocar("","Do")
+ 
 b = Banda
-b.agregar_musico("Pepito")
-b.agregar_musico("Juan")
-b.agregar_musico("Mariana")
-b.presentar_banda("")
+b.agregarmusico("Lorena")
+b.agregarmusico("Mateo")
+b.agregarmusico("Samuel")
+b.agregarmusico("Julian")
+b.presentarbanda("")

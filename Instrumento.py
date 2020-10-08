@@ -11,61 +11,54 @@ class Instrumento(ABC):
         pass
 
     @abstractmethod
-    def tocar(self, nota):
-        self.nota = nota
+    def tocarnota(self, nota):
+        #self.nota = nota
         pass
 
-class Guitarra(Instrumento):
 
-    nombre = 'Guitarra'
+class Guitarra(Instrumento):
 
     def __init__(self):
         self = self
 
-    def tocar(self):
-        return("tocando Guitarra")
-
     def afinar(self):
-        return ("afinando Guitarra")
+        return print("Afinando Guitarra")
 
-    def tocar(self,nota):
-        return("tocando Guitarra en" + self.nota)   
-   
+    def tocar(self):
+        return print("Tocando Guitarra")
+
+    def tocarnota(self, nota):
+        #self.nota = nota
+        return print("Tocando Guitarra en " + nota)
 
 
 class Bajo(Instrumento):
 
-    nombre = 'Bajo'    
-    
     def __init__(self):
         self = self
 
-    def tocar(self):
-        return("tocando Bajo")
-
     def afinar(self):
-        return ("afinando Bajo")
+        return print("Afinando Bajo")
 
-    def tocar(self,nota):
-        return("tocando Bajo en" + self.nota)  
+    def tocar(self):
+        return print("Tocando Bajo")
 
+    def tocarnota(self, nota):
+        #self.nota = nota
+        return print("Tocando Bajo en " + nota)
 
 
 class Violin(Instrumento):
 
-    nombre = 'Violin'  
-
     def __init__(self):
         self = self
 
-    def tocar(self):
-        return("tocando Violin")
-
     def afinar(self):
-        return ("afinando Violin")
+        return print("Afinando Violin")
 
-    def tocar(self,nota):
-        return("tocando Violin en" + self.nota)   
+    def tocar(self):
+        return print("Tocando Violin")
 
-
-     
+    def tocarnota(self, nota):
+        #self.nota = nota
+        return print("Tocando Violin en " + nota)
